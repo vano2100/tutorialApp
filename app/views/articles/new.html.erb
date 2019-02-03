@@ -14,18 +14,18 @@
       </ul>
     </div>
 <% end %>
-  <p>
+  <div class="form-group">
     <%= form.label :title %><br>
     <%= form.text_field :title %>
-  </p>
+  </div>
 
-  <p>
+  <div class="form-group">
     <%= form.label :text %><br>
     <%= form.text_area :text %>
-  </p>
+  </div>
 
   <p>
-    <%= form.submit %>
+    <%= form.submit "create", class: 'btn btn-default' %>
   </p>
 <% end %>
 
